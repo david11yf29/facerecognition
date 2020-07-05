@@ -37,6 +37,15 @@ class App extends React.Component {
 
   onButtonSubmit = () => {
     console.log('click');
+    clarifai.models.predict("d02b4508df58432fbb84e800597b8959", "https://samples.clarifai.com/face-det.jpg")
+    .then(
+      function(response) {
+        // do something with response
+      },
+      function(err) {
+        // there was an error
+      }
+    );
   }
 
   render() {
