@@ -56,7 +56,7 @@ class App extends React.Component {
   }
 
   displayFaceBox = (box) => {
-    console.log(box);
+    // console.log(box);
     this.setState({
       box: box 
     })
